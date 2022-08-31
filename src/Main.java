@@ -14,7 +14,14 @@ public class Main {
          * Vender: restar stock de productos indicado en ventas.txt
          * Emitir valor de stock de todo el almacen
          **/
-        System.err.println("TBD");
+        
+        String[] productos = ManejadorArchivosGenerico.leerArchivo("src\\altas.txt");
+        
+        for (String producto : productos) {
+            System.out.println(producto);
+            // Almacen.insertarProducto();
+
+        }
     }
     
 }
